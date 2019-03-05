@@ -1,0 +1,47 @@
+body {
+  background: #c3c3c3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.popup {
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  display: none;
+}
+
+.popup-overlay {
+  background: rgba(120, 10, 110, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.popup-overlay:target {
+  display: block;
+}
+
+.popup-overlay:target + .popup {
+  display: block;
+}
+
+.popup-close {
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
